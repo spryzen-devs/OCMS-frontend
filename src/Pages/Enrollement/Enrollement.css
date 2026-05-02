@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.enrollementContainer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.courseContainer{
+    display: block;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.courseContainer h2{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.courseContainer p{
+    font-size: 1rem;
+    color: #555;
+}
+
+.courseContainer button{
+    padding: 0.5rem 1rem;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.courseContainer button:hover{
+    background-color: #0056b3;
+}
