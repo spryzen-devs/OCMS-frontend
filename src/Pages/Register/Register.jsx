@@ -13,7 +13,7 @@ function Register() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try{
-            await axios.post("https://ocms-frontend-1vt9.vercel.app/users/register",{
+            await axios.post("https://ocms-backend-576v.onrender.com/users/register",{
                 name : name,
                 email : email,
                 password : password,

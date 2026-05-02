@@ -13,7 +13,7 @@ function Enrollement() {
   useEffect(() => {
     const fetchCourse = async () => {
         try{
-            const res = await axios.get(`https://ocms-frontend-1vt9.vercel.app/courses/${id}`);
+            const res = await axios.get(`https://ocms-backend-576v.onrender.com/courses/${id}`);
             setCourse(res.data);
         }catch(error){
             console.error("Error fetching course details:", error);
@@ -24,7 +24,7 @@ function Enrollement() {
 
   const handleEnroll = async (e) => {
     try{
-        await axios.post("https://ocms-frontend-1vt9.vercel.app/enrollements/add",{
+        await axios.post("https://ocms-backend-576v.onrender.com/enrollements/add",{
             studentId: userId,
             courseId: id
         })

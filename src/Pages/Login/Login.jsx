@@ -17,7 +17,7 @@ function Login() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try{
-            const response = await axios.post("https://ocms-frontend-1vt9.vercel.app/users/login",{
+            const response = await axios.post("https://ocms-backend-576v.onrender.com/users/login",{
                 email : email,
                 password : password,
                 role : role
@@ -33,7 +33,7 @@ function Login() {
     }
 
     const handleAuth = async () => {
-        const response = await axios.get(`https://ocms-frontend-1vt9.vercel.app/users/email/${email}`);
+        const response = await axios.get(`https://ocms-backend-576v.onrender.com/users/email/${email}`);
         const role = response.data.role;
         if(role === "STUDENT"){
             navigate("/student");
