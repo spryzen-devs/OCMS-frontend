@@ -11,7 +11,7 @@ function StudentA(){
     useEffect(() => {
         const fetchCourses = async () => {
         try{
-            const response = await axios.get("http://localhost:8080/courses");
+            const response = await axios.get("https://ocms-frontend-1vt9.vercel.app/courses");
             setCourses(response.data);
         }catch(error){
             console.error("Error fetching courses:", error);

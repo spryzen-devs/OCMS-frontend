@@ -14,7 +14,7 @@ function AdminD() {
     const handleSubmit = async(e) => {
         e.preventDefault();
         try{
-            await axios.post("http://localhost:8080/courses/add",{
+            await axios.post("https://ocms-frontend-1vt9.vercel.app/courses/add",{
             title : title,
             description : description,
             price : price,
@@ -31,7 +31,7 @@ function AdminD() {
     useEffect(() => {
         const fetchCourses = async () => {
             try {
-                const response = await axios.get(`http://localhost:8080/courses/getAll/${user.id}`);
+                const response = await axios.get(`https://ocms-frontend-1vt9.vercel.app/courses/getAll/${user.id}`);
                 setCourses(response.data);
             } catch (error) {
                 console.error("Error fetching courses:", error);
